@@ -14,8 +14,8 @@ class Gatto extends Prodotto {
     public function stampaScheda() {
         echo "<div>";
         echo "<h3>" . $this->nome . "</h3>";
-        echo "<p>" . $this->descrizione . "</p>";
         echo "<p>Categoria: " . $this->categoria . "</p>";
+        echo "<p>" . $this->descrizione . "</p>";
         echo "<p>Razza: " . $this->razza . "</p>";
         echo "<p>Età: " . $this->eta . "</p>";
         echo "<p>Prezzo: " . $this->prezzo . " euro</p>";

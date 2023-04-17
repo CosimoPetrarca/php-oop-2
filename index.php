@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__.'/Classi/cane.php';
 require_once __DIR__.'/Classi/gatto.php';
+require_once __DIR__.'/Classi/uccello.php';
 
 
 $cane1 = new Cane("Crocchette per cane", "Confezione da 10kg", 25.99, "Pastore Tedesco", "Grande");
@@ -9,6 +10,8 @@ $cane3 = new Cane("Osso di gomma", "Migliora la salute dei denti del tuo cane", 
 $gatto1 = new Gatto("Crocchette per gatto castrato", "Confezione da 3kg", 11.99, "Tutte", "Adulto");
 $gatto2 = new Gatto("Giochino per gatto", "Pallina con campanellino", 5.99, "Persiano", "Adulto");
 $gatto3 = new Gatto("Antiparassitario", "Elimina zecche e pulci", 12, "Tutte", "Adulto");
+$uccello1 = new Uccelli("Mix di semi per uccelli", "Confezione da 1kg", 7.99, "Canarino", "Semi vari");
+$uccello2 = new Uccelli("Semi di girasole", "Confezione da 1kg", 9.99, "Pappagallo", "Semi di girasole");
 
 
 
@@ -18,3 +21,5 @@ $cane3->stampaScheda();
 $gatto1->stampaScheda();
 $gatto2->stampaScheda();
 $gatto3->stampaScheda();
+$uccello1->stampaScheda();
+$uccello2->stampaScheda();
