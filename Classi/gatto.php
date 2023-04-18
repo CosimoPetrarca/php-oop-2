@@ -27,7 +27,7 @@ class Gatto extends Prodotto {
         echo '<h6 class="card-subtitle mb-2">' . $this->categoria . '</h6>';
         echo '<p class="card-text">' . $this->descrizione . '</p>';
         echo '<p class="list-group-item">Razza: ' . $this->razza . '</p>';
-        echo '<p class="list-group-item">Taglia: ' . $this->eta . '</p>';
+        echo '<p class="list-group-item">Età: ' . $this->eta . '</p>';
         echo '<p class="list-group-item">Prezzo: ' . $this->prezzo . ' euro</p>';
         $this->applicaSconto();
         echo "<p>Prezzo scontato: " . $this->prezzo . " euro</p>";
