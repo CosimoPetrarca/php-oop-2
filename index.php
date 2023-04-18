@@ -17,15 +17,35 @@ $pesce1 = new Pesci("Acquario per Discus", "Capacità 30 litri", 55.99, "Discus"
 $pesce2 = new Pesci("Acquario per Piragna", "Capacità 60 litri", 120, "Piragna", "Grande");
 
 
+?>
 
+<!DOCTYPE html>
+<html>
 
-$cane1->stampaScheda();
-$cane2->stampaScheda();
-$cane3->stampaScheda();
-$gatto1->stampaScheda();
-$gatto2->stampaScheda();
-$gatto3->stampaScheda();
-$uccello1->stampaScheda();
-$uccello2->stampaScheda();
-$pesce1->stampaScheda(); 
-$pesce2->stampaScheda(); 
+<head>
+    <title>Il mio negozio di animali</title>
+    <!-- Link ai file CSS di Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Link ai file JS di Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <div class="d-flex flex-wrap ">
+        <?php $cane1->stampaScheda(); ?>
+        <?php $cane2->stampaScheda(); ?>
+        <?php $cane3->stampaScheda(); ?>
+        <?php $gatto1->stampaScheda(); ?>
+        <?php $gatto2->stampaScheda(); ?>
+        <?php $gatto3->stampaScheda(); ?>
+        <?php $uccello1->stampaScheda(); ?>
+        <?php $uccello2->stampaScheda(); ?>
+        <?php $pesce1->stampaScheda(); ?>
+        <?php $pesce2->stampaScheda(); ?>
+    </div>
+</body>
+
+</html>
